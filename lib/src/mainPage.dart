@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         Row(children: [
                           Image.asset(
-                            "lib/src/assets/icons/networking.png",
+                            "lib/assets/icons/networking.png",
                             height: 35,
                             width: 50,
                             color: Colors.white,
@@ -98,89 +98,188 @@ class _HomePageState extends State<HomePage> {
                         topRight: Radius.circular(50)),
                     color: Colors.white,
                   ),
-                  child: Column(
-                    children: [
-                      const Padding(
-                        padding: EdgeInsets.only(top: 20, bottom: 10),
-                        child: Text(
-                          "Trending Problems",
-                          style: TextStyle(fontSize: 24, color: Colors.black),
-                        ),
-                      ),
-                      CarouselSlider(
-                          options: CarouselOptions(
-                            height: 180,
-                            initialPage: 0,
-                            enableInfiniteScroll: true,
-                            reverse: false,
-                            autoPlay: true,
-                            autoPlayInterval: const Duration(seconds: 4),
-                            autoPlayAnimationDuration:
-                                const Duration(milliseconds: 800),
-                            autoPlayCurve: Curves.fastOutSlowIn,
-                            enlargeCenterPage: true,
-                            enlargeFactor: 0.3,
-
-                            // onPageChanged: callbackFunction,
-                            scrollDirection: Axis.horizontal,
+                  child: SingleChildScrollView(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        const Padding(
+                          padding: EdgeInsets.only(top: 20, bottom: 10),
+                          child: Text(
+                            "Trending Problems",
+                            style: TextStyle(fontSize: 24, color: Colors.black),
                           ),
-                          items: [
-                            Container(
-                              decoration: BoxDecoration(
-                                  color: const Color(0xff082E31),
-                                  border: Border.all(color: Colors.black),
-                                  borderRadius: const BorderRadius.all(
-                                      Radius.circular(23))),
-                              width: 350,
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 15, top: 15),
-                                child: Column(
-                                  children: [
-                                    const Text(
-                                      "Hii there i am pushpendra how are you what are you doing here i am tried what you think what you do here i think  ",
-                                      style: TextStyle(
-                                          fontSize: 22,
-                                          color: Color(0xff3AF1C3)),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: 18),
-                                      child: Row(
-                                        children: [
-                                          Image.asset(
-                                            "lib/src/assets/icons/upload.png",
-                                            color: Colors.white,
-                                            height: 20,
-                                          ),
-                                          const Text(
-                                            "22",
-                                            style:
-                                                TextStyle(color: Colors.white),
-                                          ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsets.only(left: 15),
-                                            child: Image.asset(
-                                              "lib/src/assets/icons/download.png",
+                        ),
+                        CarouselSlider(
+                            options: CarouselOptions(
+                              height: 180,
+                              initialPage: 0,
+                              enableInfiniteScroll: true,
+                              reverse: false,
+                              autoPlay: true,
+                              autoPlayInterval: const Duration(seconds: 4),
+                              autoPlayAnimationDuration:
+                                  const Duration(milliseconds: 800),
+                              autoPlayCurve: Curves.fastOutSlowIn,
+                              enlargeCenterPage: true,
+                              enlargeFactor: 0.3,
+
+                              // onPageChanged: callbackFunction,
+                              scrollDirection: Axis.horizontal,
+                            ),
+                            items: [
+                              Container(
+                                decoration: BoxDecoration(
+                                    color: const Color(0xff082E31),
+                                    border: Border.all(color: Colors.black),
+                                    borderRadius: const BorderRadius.all(
+                                        Radius.circular(23))),
+                                width: 350,
+                                child: Padding(
+                                  padding:
+                                      const EdgeInsets.only(left: 15, top: 15),
+                                  child: Column(
+                                    children: [
+                                      const Text(
+                                        "Hii there i am pushpendra how are you what are you doing here i am tried what you think what you do here i think  ",
+                                        style: TextStyle(
+                                            fontSize: 22,
+                                            color: Color(0xff3AF1C3)),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 18),
+                                        child: Row(
+                                          children: [
+                                            Image.asset(
+                                              "lib/assets/icons/upload.png",
                                               color: Colors.white,
                                               height: 20,
                                             ),
-                                          ),
-                                          const Text(
-                                            "22",
-                                            style:
-                                                TextStyle(color: Colors.white),
-                                          ),
-                                        ],
-                                      ),
-                                    )
-                                  ],
+                                            const Text(
+                                              "22",
+                                              style: TextStyle(
+                                                  color: Colors.white),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  left: 15),
+                                              child: Image.asset(
+                                                "lib/assets/icons/download.png",
+                                                color: Colors.white,
+                                                height: 20,
+                                              ),
+                                            ),
+                                            const Text(
+                                              "22",
+                                              style: TextStyle(
+                                                  color: Colors.white),
+                                            ),
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
-                              ),
-                            )
+                              )
+                            ]),
+
+                        Container(
+                          child: Column(children: [
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text(
+                                "Hii there i am pushpendra how are yuo what you think"),
+                            Text("Hii"),
+                            Text("Hii"),
+                            Text("Hii"),
                           ]),
-                      // ending
-                    ],
+                        )
+                        // ending
+                      ],
+                    ),
                   ),
                 ),
                 // bottom navigation bar starting
